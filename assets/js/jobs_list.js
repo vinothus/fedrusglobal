@@ -3,7 +3,8 @@
 if (typeof app_initialized != 'undefined' && app_initialized) {
   // do something here
 } else {
-  var App = angular.module("OorwinApp", ['ui.mask','ngIdle','ngSanitize','ngStorage','ngRoute','ui.bootstrap','ui.bootstrap.datetimepicker','cnf.ngConfirmAlert','ui.multiselect','angularUtils.directives.dirPagination','ngCkeditor','ngTagsInput','angucomplete-alt','ui.mask']);
+  // Use existing module instead of redefining it
+  var App = angular.module("OorwinApp");
   
 }
 
