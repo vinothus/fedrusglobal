@@ -1,0 +1,539 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?74071744');
+  src: url('../fonts/fontello.eot?74071744#iefix') format('embedded-opentype'),
+       url('../fonts/fontello.woff2?74071744') format('woff2'),
+       url('../fonts/fontello.woff?74071744') format('woff'),
+       url('../fonts/fontello.ttf?74071744') format('truetype'),
+       url('../fonts/fontello.svg?74071744#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../fonts/fontello.svg?74071744#fontello') format('svg');
+  }
+}
+*/
+[class^="oorwin-"]:before, [class*=" oorwin-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.oorwin-move-element:before { content: '\e800'; } /* '' */
+.oorwin-accordion-edit:before { content: '\e801'; } /* '' */
+.oorwin-activate:before { content: '\e802'; } /* '' */
+.oorwin-add-note:before { content: '\e803'; } /* '' */
+.oorwin-add-contact:before { content: '\e804'; } /* '' */
+.oorwin-add-location:before { content: '\e805'; } /* '' */
+.oorwin-add-note-1:before { content: '\e806'; } /* '' */
+.oorwin-line-notes:before { content: '\e807'; } /* '' */
+.oorwin-add-to-folder:before { content: '\e808'; } /* '' */
+.oorwin-add-to-list:before { content: '\e809'; } /* '' */
+.oorwin-add-to-pipeline:before { content: '\e80a'; } /* '' */
+.oorwin-add-user:before { content: '\e80b'; } /* '' */
+.oorwin-add-users:before { content: '\e80c'; } /* '' */
+.oorwin-add:before { content: '\e80d'; } /* '' */
+.oorwin-alerton-accordions:before { content: '\e80e'; } /* '' */
+.oorwin-alphabet:before { content: '\e80f'; } /* '' */
+.oorwin-apply-role:before { content: '\e810'; } /* '' */
+.oorwin-approvals:before { content: '\e811'; } /* '' */
+.oorwin-archivals:before { content: '\e812'; } /* '' */
+.oorwin-ascending:before { content: '\e813'; } /* '' */
+.oorwin-assign-employee:before { content: '\e814'; } /* '' */
+.oorwin-assignto:before { content: '\e815'; } /* '' */
+.oorwin-attachment-campaigns:before { content: '\e816'; } /* '' */
+.oorwin-attachment:before { content: '\e817'; } /* '' */
+.oorwin-auditlog:before { content: '\e818'; } /* '' */
+.oorwin-automation-mailbox:before { content: '\e819'; } /* '' */
+.oorwin-account-name:before { content: '\e81a'; } /* '' */
+.oorwin-billing-address:before { content: '\e81b'; } /* '' */
+.oorwin-customer-insights:before { content: '\e81c'; } /* '' */
+.oorwin-designation:before { content: '\e81d'; } /* '' */
+.oorwin-bot-questions:before { content: '\e81e'; } /* '' */
+.oorwin-bulk-submission:before { content: '\e81f'; } /* '' */
+.oorwin-calendar:before { content: '\e820'; } /* '' */
+.oorwin-call:before { content: '\e821'; } /* '' */
+.oorwin-card-view:before { content: '\e822'; } /* '' */
+.oorwin-career-portal:before { content: '\e823'; } /* '' */
+.oorwin-duplicate-accounts:before { content: '\e824'; } /* '' */
+.oorwin-check-circle:before { content: '\e825'; } /* '' */
+.oorwin-check:before { content: '\e826'; } /* '' */
+.oorwin-checkbox-off:before { content: '\e827'; } /* '' */
+.oorwin-checkbox-on:before { content: '\e828'; } /* '' */
+.oorwin-clock:before { content: '\e829'; } /* '' */
+.oorwin-clone-banner:before { content: '\e82a'; } /* '' */
+.oorwin-clone-user:before { content: '\e82b'; } /* '' */
+.oorwin-clone:before { content: '\e82c'; } /* '' */
+.oorwin-close:before { content: '\e82d'; } /* '' */
+.oorwin-cloud-download:before { content: '\e82e'; } /* '' */
+.oorwin-cloud-selected:before { content: '\e82f'; } /* '' */
+.oorwin-collapse:before { content: '\e830'; } /* '' */
+.oorwin-communication:before { content: '\e831'; } /* '' */
+.oorwin-company-branding:before { content: '\e832'; } /* '' */
+.oorwin-compare:before { content: '\e833'; } /* '' */
+.oorwin-merge-accounts:before { content: '\e834'; } /* '' */
+.oorwin-primary-account:before { content: '\e835'; } /* '' */
+.oorwin-convert-to-employee:before { content: '\e836'; } /* '' */
+.oorwin-copy:before { content: '\e837'; } /* '' */
+.oorwin-create-placement:before { content: '\e838'; } /* '' */
+.oorwin-credit-allocation:before { content: '\e839'; } /* '' */
+.oorwin-currentpage-tickmark:before { content: '\e83a'; } /* '' */
+.oorwin-custom-forms:before { content: '\e83b'; } /* '' */
+.oorwin-remove-from-folder:before { content: '\e83c'; } /* '' */
+.oorwin-days-remaining:before { content: '\e83d'; } /* '' */
+.oorwin-decending:before { content: '\e83e'; } /* '' */
+.oorwin-default-setting:before { content: '\e83f'; } /* '' */
+.oorwin-request-document:before { content: '\e840'; } /* '' */
+.oorwin-delete:before { content: '\e841'; } /* '' */
+.oorwin-desktop:before { content: '\e842'; } /* '' */
+.oorwin-search-contacts:before { content: '\e843'; } /* '' */
+.oorwin-down-arrow:before { content: '\e844'; } /* '' */
+.oorwin-downarrow-interview-trend:before { content: '\e845'; } /* '' */
+.oorwin-download:before { content: '\e846'; } /* '' */
+.oorwin-dropdown-up-arrow:before { content: '\e847'; } /* '' */
+.oorwin-dropdown-arrow:before { content: '\e848'; } /* '' */
+.oorwin-due-date:before { content: '\e849'; } /* '' */
+.oorwin-edit-accordion:before { content: '\e84a'; } /* '' */
+.oorwin-edit-actions:before { content: '\e84b'; } /* '' */
+.oorwin-edit-document-access:before { content: '\e84c'; } /* '' */
+.oorwin-edit:before { content: '\e84d'; } /* '' */
+.oorwin-arrow-accordion:before { content: '\e84e'; } /* '' */
+.oorwin-employee-reporting:before { content: '\e84f'; } /* '' */
+.oorwin-error-illustration:before { content: '\e850'; } /* '' */
+.oorwin-expand:before { content: '\e851'; } /* '' */
+.oorwin-expenses:before { content: '\e852'; } /* '' */
+.oorwin-experience:before { content: '\e853'; } /* '' */
+.oorwin-export:before { content: '\e854'; } /* '' */
+.oorwin-send-sms:before { content: '\e855'; } /* '' */
+.oorwin-facebook-grey:before { content: '\e856'; } /* '' */
+.oorwin-favourites:before { content: '\e857'; } /* '' */
+.oorwin-filter:before { content: '\e858'; } /* '' */
+.oorwin-firstname:before { content: '\e859'; } /* '' */
+.oorwin-full-star:before { content: '\e85a'; } /* '' */
+.oorwin-general-details:before { content: '\e85b'; } /* '' */
+.oorwin-sms-contact:before { content: '\e85c'; } /* '' */
+.oorwin-globe:before { content: '\e85d'; } /* '' */
+.oorwin-half-star:before { content: '\e85e'; } /* '' */
+.oorwin-hide:before { content: '\e85f'; } /* '' */
+.oorwin-image-campaigns:before { content: '\e860'; } /* '' */
+.oorwin-immediately-available:before { content: '\e861'; } /* '' */
+.oorwin-inactive:before { content: '\e862'; } /* '' */
+.oorwin-merge-leads:before { content: '\e863'; } /* '' */
+.oorwin-information:before { content: '\e864'; } /* '' */
+.oorwin-bulk-upload:before { content: '\e865'; } /* '' */
+.oorwin-inline-edit:before { content: '\e866'; } /* '' */
+.oorwin-interview-status:before { content: '\e867'; } /* '' */
+.oorwin-interview-type:before { content: '\e868'; } /* '' */
+.oorwin-ip-restriction:before { content: '\e869'; } /* '' */
+.oorwin-job-grabber:before { content: '\e86a'; } /* '' */
+.oorwin-kanban:before { content: '\e86b'; } /* '' */
+.oorwin-billing-usage:before { content: '\e86c'; } /* '' */
+.oorwin-keywords:before { content: '\e86d'; } /* '' */
+.oorwin-lastname-campaigns:before { content: '\e86e'; } /* '' */
+.oorwin-layout-campaigns:before { content: '\e86f'; } /* '' */
+.oorwin-left-arrow:before { content: '\e870'; } /* '' */
+.oorwin-left-doublearrow:before { content: '\e871'; } /* '' */
+.oorwin-leftnav-accounts:before { content: '\e872'; } /* '' */
+.oorwin-leftnav-assignments:before { content: '\e873'; } /* '' */
+.oorwin-leftnav-ats:before { content: '\e874'; } /* '' */
+.oorwin-leftnav-attendance:before { content: '\e875'; } /* '' */
+.oorwin-leftnav-burgermenu:before { content: '\e876'; } /* '' */
+.oorwin-leftnav-campaigns:before { content: '\e877'; } /* '' */
+.oorwin-leftnav-candidates:before { content: '\e878'; } /* '' */
+.oorwin-leftnav-close:before { content: '\e879'; } /* '' */
+.oorwin-leftnav-contacts:before { content: '\e87a'; } /* '' */
+.oorwin-leftnav-crm:before { content: '\e87b'; } /* '' */
+.oorwin-leftnav-dashboard:before { content: '\e87c'; } /* '' */
+.oorwin-leftnav-documents:before { content: '\e87d'; } /* '' */
+.oorwin-leftnav-employees:before { content: '\e87e'; } /* '' */
+.oorwin-leftnav-expenses:before { content: '\e87f'; } /* '' */
+.oorwin-leftnav-hrms:before { content: '\e880'; } /* '' */
+.oorwin-leftnav-i9:before { content: '\e881'; } /* '' */
+.oorwin-leftnav-immigration:before { content: '\e882'; } /* '' */
+.oorwin-leftnav-invoices:before { content: '\e883'; } /* '' */
+.oorwin-new_jobgrabber:before { content: '\e884'; } /* '' */
+.oorwin-leftnav-jobs:before { content: '\e885'; } /* '' */
+.oorwin-leftnav-marketplace:before { content: '\e886'; } /* '' */
+.oorwin-leftnav-onboarding:before { content: '\e887'; } /* '' */
+.oorwin-leftnav-oorwin-logo:before { content: '\e888'; } /* '' */
+.oorwin-leftnav-opportunities:before { content: '\e889'; } /* '' */
+.oorwin-new_permplacements:before { content: '\e88a'; } /* '' */
+.oorwin-leftnav-placements:before { content: '\e88b'; } /* '' */
+.oorwin-leftnav-questionaire:before { content: '\e88c'; } /* '' */
+.oorwin-leftnav-reports:before { content: '\e88d'; } /* '' */
+.oorwin-leftnav-resourcepool:before { content: '\e88e'; } /* '' */
+.oorwin-new_resourcepool:before { content: '\e88e'; } /* '' */
+.oorwin-leftnav-settings:before { content: '\e88f'; } /* '' */
+.oorwin-leftnav-submissions:before { content: '\e890'; } /* '' */
+.oorwin-leftnav-support:before { content: '\e891'; } /* '' */
+.oorwin-leftnav-templates:before { content: '\e892'; } /* '' */
+.oorwin-new_timesheets:before { content: '\e893'; } /* '' */
+.oorwin-leftnav-training:before { content: '\e894'; } /* '' */
+.oorwin-link-account:before { content: '\e895'; } /* '' */
+.oorwin-blacklist:before { content: '\e896'; } /* '' */
+.oorwin-linkedin-grey:before { content: '\e897'; } /* '' */
+.oorwin-list-view:before { content: '\e898'; } /* '' */
+.oorwin-locale-information:before { content: '\e899'; } /* '' */
+.oorwin-location:before { content: '\e89a'; } /* '' */
+.oorwin-mail-dns:before { content: '\e89b'; } /* '' */
+.oorwin-mail-id:before { content: '\e89c'; } /* '' */
+.oorwin-communication-center:before { content: '\e89d'; } /* '' */
+.oorwin-edit-recruitment--team:before { content: '\e89e'; } /* '' */
+.oorwin-fetch-contact-details:before { content: '\e89f'; } /* '' */
+.oorwin-my-profile:before { content: '\e8a0'; } /* '' */
+.oorwin-parse-tag-candidate:before { content: '\e8a1'; } /* '' */
+.oorwin-reject:before { content: '\e8a2'; } /* '' */
+.oorwin-matching-profiles:before { content: '\e8a3'; } /* '' */
+.oorwin-signout:before { content: '\e8a4'; } /* '' */
+.oorwin-move-employee:before { content: '\e8a5'; } /* '' */
+.oorwin-move-left:before { content: '\e8a6'; } /* '' */
+.oorwin-move-right:before { content: '\e8a7'; } /* '' */
+.oorwin-new-tab:before { content: '\e8a8'; } /* '' */
+.oorwin-next-arrow:before { content: '\e8a9'; } /* '' */
+.oorwin-submit:before { content: '\e8aa'; } /* '' */
+.oorwin-tag-job:before { content: '\e8ab'; } /* '' */
+.oorwin-move-to-pool:before { content: '\e8ac'; } /* '' */
+.oorwin-share-resume:before { content: '\e8ad'; } /* '' */
+.oorwin-add-tag-job:before { content: '\e8ae'; } /* '' */
+.oorwin-note:before { content: '\e8af'; } /* '' */
+.oorwin-notification:before { content: '\e8b0'; } /* '' */
+.oorwin-notifications:before { content: '\e8b1'; } /* '' */
+.oorwin-notify:before { content: '\e8b2'; } /* '' */
+.oorwin-off-boarding:before { content: '\e8b3'; } /* '' */
+.oorwin-offboarding:before { content: '\e8b4'; } /* '' */
+.oorwin-organisation-hierarchy:before { content: '\e8b5'; } /* '' */
+.oorwin-paint:before { content: '\e8b6'; } /* '' */
+.oorwin-pen-icon:before { content: '\e8b7'; } /* '' */
+.oorwin-phone-campaigns:before { content: '\e8b8'; } /* '' */
+.oorwin-phone-number:before { content: '\e8b9'; } /* '' */
+.oorwin-plugin-access:before { content: '\e8ba'; } /* '' */
+.oorwin-plus-icon:before { content: '\e8bb'; } /* '' */
+.oorwin-predefined-tasks:before { content: '\e8bc'; } /* '' */
+.oorwin-mark-read:before { content: '\e8bd'; } /* '' */
+.oorwin-profile-update-request:before { content: '\e8be'; } /* '' */
+.oorwin-quick-add:before { content: '\e8bf'; } /* '' */
+.oorwin-initiate-onboarding:before { content: '\e8c0'; } /* '' */
+.oorwin-parse-resume:before { content: '\e8c1'; } /* '' */
+.oorwin-recomended-candidate-active:before { content: '\e8c2'; } /* '' */
+.oorwin-recomended-candidate-inactive:before { content: '\e8c3'; } /* '' */
+.oorwin-referral-settings:before { content: '\e8c4'; } /* '' */
+.oorwin-refresh:before { content: '\e8c5'; } /* '' */
+.oorwin-reminder:before { content: '\e8c6'; } /* '' */
+.oorwin-reminders:before { content: '\e8c7'; } /* '' */
+.oorwin-verified:before { content: '\e8c8'; } /* '' */
+.oorwin-rename:before { content: '\e8c9'; } /* '' */
+.oorwin-report-access:before { content: '\e8ca'; } /* '' */
+.oorwin-reset-password:before { content: '\e8cb'; } /* '' */
+.oorwin-metrics:before { content: '\e8cc'; } /* '' */
+.oorwin-restrict-candidate-active:before { content: '\e8cd'; } /* '' */
+.oorwin-restrict-candidate-inactive:before { content: '\e8ce'; } /* '' */
+.oorwin-resume-harvesting-drawer:before { content: '\e8cf'; } /* '' */
+.oorwin-resume-harvesting:before { content: '\e8d0'; } /* '' */
+.oorwin-resume-preview:before { content: '\e8d1'; } /* '' */
+.oorwin-resume:before { content: '\e8d2'; } /* '' */
+.oorwin-revise:before { content: '\e8d3'; } /* '' */
+.oorwin-right-arrow:before { content: '\e8d4'; } /* '' */
+.oorwin-right-doublearrow:before { content: '\e8d5'; } /* '' */
+.oorwin-history:before { content: '\e8d6'; } /* '' */
+.oorwin-campaigns-details:before { content: '\e8d7'; } /* '' */
+.oorwin-schedule-interview-banner:before { content: '\e8d8'; } /* '' */
+.oorwin-search-application:before { content: '\e8d9'; } /* '' */
+.oorwin-search:before { content: '\e8da'; } /* '' */
+.oorwin-documents:before { content: '\e8db'; } /* '' */
+.oorwin-security:before { content: '\e8dc'; } /* '' */
+.oorwin-send-documents-banner:before { content: '\e8dd'; } /* '' */
+.oorwin-send-documents:before { content: '\e8de'; } /* '' */
+.oorwin-discontinue:before { content: '\e8df'; } /* '' */
+.oorwin-send-small:before { content: '\e8e0'; } /* '' */
+.oorwin-send:before { content: '\e8e1'; } /* '' */
+.oorwin-set-default:before { content: '\e8e2'; } /* '' */
+.oorwin-setpriority:before { content: '\e8e3'; } /* '' */
+.oorwin-setting-module:before { content: '\e8e4'; } /* '' */
+.oorwin-share-documents:before { content: '\e8e5'; } /* '' */
+.oorwin-new_search:before { content: '\e8e6'; } /* '' */
+.oorwin-share-grey:before { content: '\e8e7'; } /* '' */
+.oorwin-share-job:before { content: '\e8e8'; } /* '' */
+.oorwin-new_filter:before { content: '\e8e9'; } /* '' */
+.oorwin-share-to-all:before { content: '\e8ea'; } /* '' */
+.oorwin-share-to-candidate:before { content: '\e8eb'; } /* '' */
+.oorwin-time-left:before { content: '\e8ec'; } /* '' */
+.oorwin-show-hide-password:before { content: '\e8ed'; } /* '' */
+.oorwin-show:before { content: '\e8ee'; } /* '' */
+.oorwin-sign:before { content: '\e8ef'; } /* '' */
+.oorwin-similar-submissions:before { content: '\e8f0'; } /* '' */
+.oorwin-skipped-tickmark:before { content: '\e8f1'; } /* '' */
+.oorwin-small-edit:before { content: '\e8f2'; } /* '' */
+.oorwin-smiley:before { content: '\e8f3'; } /* '' */
+.oorwin-sms:before { content: '\e8f4'; } /* '' */
+.oorwin-sort:before { content: '\e8f5'; } /* '' */
+.oorwin-star-outline:before { content: '\e8f6'; } /* '' */
+.oorwin-star:before { content: '\e8f7'; } /* '' */
+.oorwin-string-search:before { content: '\e8f8'; } /* '' */
+.oorwin-submissions:before { content: '\e8f9'; } /* '' */
+.oorwin-submit-to-job:before { content: '\e8fa'; } /* '' */
+.oorwin-switch-access-level:before { content: '\e8fb'; } /* '' */
+.oorwin-approvers:before { content: '\e8fc'; } /* '' */
+.oorwin-approve:before { content: '\e8fd'; } /* '' */
+.oorwin-reject-1:before { content: '\e8fe'; } /* '' */
+.oorwin-candidate-vetting:before { content: '\e8ff'; } /* '' */
+.oorwin-sync:before { content: '\e900'; } /* '' */
+.oorwin-table-view:before { content: '\e901'; } /* '' */
+.oorwin-table:before { content: '\e902'; } /* '' */
+.oorwin-tablet:before { content: '\e903'; } /* '' */
+.oorwin-task-status:before { content: '\e904'; } /* '' */
+.oorwin-task:before { content: '\e905'; } /* '' */
+.oorwin-confirm:before { content: '\e906'; } /* '' */
+.oorwin-teams:before { content: '\e907'; } /* '' */
+.oorwin-templates:before { content: '\e908'; } /* '' */
+.oorwin-tickmark:before { content: '\e909'; } /* '' */
+.oorwin-time:before { content: '\e90a'; } /* '' */
+.oorwin-timeandattendance:before { content: '\e90b'; } /* '' */
+.oorwin-timeline:before { content: '\e90c'; } /* '' */
+.oorwin-timezone:before { content: '\e90d'; } /* '' */
+.oorwin-sms-candidate:before { content: '\e90e'; } /* '' */
+.oorwin-todo-tickmark:before { content: '\e90f'; } /* '' */
+.oorwin-sms-job:before { content: '\e910'; } /* '' */
+.oorwin-untag:before { content: '\e911'; } /* '' */
+.oorwin-vendor-candidates:before { content: '\e912'; } /* '' */
+.oorwin-twitter-grey:before { content: '\e913'; } /* '' */
+.oorwin-type:before { content: '\e914'; } /* '' */
+.oorwin-uncheck-circle:before { content: '\e915'; } /* '' */
+.oorwin-uncheck:before { content: '\e916'; } /* '' */
+.oorwin-configure:before { content: '\e917'; } /* '' */
+.oorwin-unsync:before { content: '\e918'; } /* '' */
+.oorwin-up-arrow-submissiontrend:before { content: '\e919'; } /* '' */
+.oorwin-uparrow-interview-trendsvg:before { content: '\e91a'; } /* '' */
+.oorwin-uparrow:before { content: '\e91b'; } /* '' */
+.oorwin-new_text-recruit:before { content: '\e91c'; } /* '' */
+.oorwin-update-shift:before { content: '\e91d'; } /* '' */
+.oorwin-upload:before { content: '\e91e'; } /* '' */
+.oorwin-url:before { content: '\e91f'; } /* '' */
+.oorwin-user-image:before { content: '\e920'; } /* '' */
+.oorwin-user01:before { content: '\e921'; } /* '' */
+.oorwin-usergroups:before { content: '\e922'; } /* '' */
+.oorwin-users:before { content: '\e923'; } /* '' */
+.oorwin-video-conference:before { content: '\e924'; } /* '' */
+.oorwin-video:before { content: '\e925'; } /* '' */
+.oorwin-stages:before { content: '\e926'; } /* '' */
+.oorwin-copy-link:before { content: '\e927'; } /* '' */
+.oorwin-promotion-details:before { content: '\e928'; } /* '' */
+.oorwin-re-validate:before { content: '\e929'; } /* '' */
+.oorwin-resend:before { content: '\e92a'; } /* '' */
+.oorwin-share-in-linkedin:before { content: '\e92b'; } /* '' */
+.oorwin-workflows:before { content: '\e92c'; } /* '' */
+.oorwin-blacklist-account:before { content: '\e92d'; } /* '' */
+.oorwin-dashboard-access:before { content: '\e92e'; } /* '' */
+.oorwin-email-sync:before { content: '\e92f'; } /* '' */
+.oorwin-role-security:before { content: '\e930'; } /* '' */
+.oorwin-security-access:before { content: '\e931'; } /* '' */
+.oorwin-mail-config:before { content: '\e932'; } /* '' */
+.oorwin-submit-requirement:before { content: '\e933'; } /* '' */
+.oorwin-kebab-menu:before { content: '\e934'; } /* '' */
+.oorwin-back-button:before { content: '\e935'; } /* '' */
+.oorwin-save:before { content: '\e936'; } /* '' */
+.oorwin-update:before { content: '\e937'; } /* '' */
+.oorwin-washed-away:before { content: '\e938'; } /* '' */
+.oorwin-parse-attachment:before { content: '\e939'; } /* '' */
+.oorwin-parse-text:before { content: '\e93a'; } /* '' */
+.oorwin-employee-offboarding:before { content: '\e93b'; } /* '' */
+.oorwin-active-employee:before { content: '\e93c'; } /* '' */
+.oorwin-employee-type:before { content: '\e93d'; } /* '' */
+.oorwin-preview:before { content: '\e93e'; } /* '' */
+.oorwin-mark-unread:before { content: '\e93f'; } /* '' */
+.oorwin-restore:before { content: '\e940'; } /* '' */
+.oorwin-add-to-job:before { content: '\e941'; } /* '' */
+.oorwin-view-job:before { content: '\e942'; } /* '' */
+.oorwin-regularize:before { content: '\e943'; } /* '' */
+.oorwin-apply-leave:before { content: '\e944'; } /* '' */
+.oorwin-work-from-home:before { content: '\e945'; } /* '' */
+.oorwin-apply-break:before { content: '\e946'; } /* '' */
+.oorwin-design:before { content: '\e947'; } /* '' */
+.oorwin-make-inactive:before { content: '\e948'; } /* '' */
+.oorwin-use-template:before { content: '\e949'; } /* '' */
+.oorwin-convert:before { content: '\e94a'; } /* '' */
+.oorwin-initiate-exit:before { content: '\e94b'; } /* '' */
+.oorwin-account-contact:before { content: '\e94c'; } /* '' */
+.oorwin-all-invoices:before { content: '\e94d'; } /* '' */
+.oorwin-approvers-1:before { content: '\e94e'; } /* '' */
+.oorwin-publish-job:before { content: '\e94f'; } /* '' */
+.oorwin-convert-to-invoice:before { content: '\e950'; } /* '' */
+.oorwin-cre4ate-project-invoice:before { content: '\e951'; } /* '' */
+.oorwin-disconnect-quickbooks:before { content: '\e952'; } /* '' */
+.oorwin-export-to-quickbooks:before { content: '\e953'; } /* '' */
+.oorwin-make-payment:before { content: '\e954'; } /* '' */
+.oorwin-publish-social-media:before { content: '\e955'; } /* '' */
+.oorwin-saved-invoices:before { content: '\e956'; } /* '' */
+.oorwin-sent-invoice:before { content: '\e957'; } /* '' */
+.oorwin-receive-payment:before { content: '\e958'; } /* '' */
+.oorwin-connect-to-quickbooks:before { content: '\e959'; } /* '' */
+.oorwin-initiate-lca-1:before { content: '\e95a'; } /* '' */
+.oorwin-update-resume:before { content: '\e95b'; } /* '' */
+.oorwin-reinitiate-i9:before { content: '\e95c'; } /* '' */
+.oorwin-review-i9:before { content: '\e95d'; } /* '' */
+.oorwin-initiate-lca:before { content: '\e95e'; } /* '' */
+.oorwin-parse-lca:before { content: '\e95f'; } /* '' */
+.oorwin-import-lca-for-dol:before { content: '\e960'; } /* '' */
+.oorwin-work-authorization-document:before { content: '\e961'; } /* '' */
+.oorwin-rehire:before { content: '\e962'; } /* '' */
+.oorwin-first-name:before { content: '\e963'; } /* '' */
+.oorwin-new_quick-add:before { content: '\e964'; } /* '' */
+.oorwin-last-name:before { content: '\e965'; } /* '' */
+.oorwin-new_notifications:before { content: '\e966'; } /* '' */
+.oorwin-migrate-resourcepool:before { content: '\e967'; } /* '' */
+.oorwin-new_support:before { content: '\e968'; } /* '' */
+.oorwin-image:before { content: '\e969'; } /* '' */
+.oorwin-new_settings:before { content: '\e96a'; } /* '' */
+.oorwin-projects:before { content: '\e96b'; } /* '' */
+.oorwin-website:before { content: '\e96c'; } /* '' */
+.oorwin-title:before { content: '\e96d'; } /* '' */
+.oorwin-department:before { content: '\e96e'; } /* '' */
+.oorwin-phone:before { content: '\e96f'; } /* '' */
+.oorwin-mobile:before { content: '\e970'; } /* '' */
+.oorwin-migrate-candidates:before { content: '\e971'; } /* '' */
+.oorwin-view:before { content: '\e972'; } /* '' */
+.oorwin-send-mail-1:before { content: '\e973'; } /* '' */
+.oorwin-view-task:before { content: '\e974'; } /* '' */
+.oorwin-enable-portal-access:before { content: '\e975'; } /* '' */
+.oorwin-add-task:before { content: '\e976'; } /* '' */
+.oorwin-switch-ui:before { content: '\e977'; } /* '' */
+.oorwin-new_marketplace:before { content: '\e978'; } /* '' */
+.oorwin-new_reports:before { content: '\e979'; } /* '' */
+.oorwin-new_templates:before { content: '\e97a'; } /* '' */
+.oorwin-new_projects:before { content: '\e97b'; } /* '' */
+.oorwin-new_offboarding:before { content: '\e97c'; } /* '' */
+.oorwin-new_attendance:before { content: '\e97d'; } /* '' */
+.oorwin-new_onboarding:before { content: '\e97e'; } /* '' */
+.oorwin-new_documents:before { content: '\e97f'; } /* '' */
+.oorwin-new_tasks:before { content: '\e980'; } /* '' */
+.oorwin-referral-details:before { content: '\e981'; } /* '' */
+.oorwin-new_invoices:before { content: '\e982'; } /* '' */
+.oorwin-new_work-authorization:before { content: '\e983'; } /* '' */
+.oorwin-new_expenses:before { content: '\e984'; } /* '' */
+.oorwin-new_timesheet:before { content: '\e985'; } /* '' */
+.oorwin-new_campaigns:before { content: '\e986'; } /* '' */
+.oorwin-new_candidates:before { content: '\e987'; } /* '' */
+.oorwin-new_resource-pool:before { content: '\e988'; } /* '' */
+.oorwin-new_perm-placements:before { content: '\e989'; } /* '' */
+.oorwin-new_jobs:before { content: '\e98a'; } /* '' */
+.oorwin-new_assignments:before { content: '\e98b'; } /* '' */
+.oorwin-new_employees:before { content: '\e98c'; } /* '' */
+.oorwin-new_training:before { content: '\e98d'; } /* '' */
+.oorwin-new_harvesting:before { content: '\e98e'; } /* '' */
+.oorwin-new_submissions:before { content: '\e98f'; } /* '' */
+.oorwin-new_job-grabber:before { content: '\e990'; } /* '' */
+.oorwin-new_opportunities:before { content: '\e991'; } /* '' */
+.oorwin-new_contacts:before { content: '\e992'; } /* '' */
+.oorwin-new_accounts:before { content: '\e993'; } /* '' */
+.oorwin-new_dashboard:before { content: '\e994'; } /* '' */
+.oorwin-new_i9:before { content: '\e995'; } /* '' */
+.oorwin-settings-general-details:before { content: '\e996'; } /* '' */
+.oorwin-settings-mail-dns:before { content: '\e997'; } /* '' */
+.oorwin-settings-billing-address:before { content: '\e998'; } /* '' */
+.oorwin-settings-locale-information:before { content: '\e999'; } /* '' */
+.oorwin-settings-company-branding:before { content: '\e99a'; } /* '' */
+.oorwin-settings-custom-forms:before { content: '\e99b'; } /* '' */
+.oorwin-settings-worflows:before { content: '\e99c'; } /* '' */
+.oorwin-settings-keywords:before { content: '\e99d'; } /* '' */
+.oorwin-settings-resume-harvesting:before { content: '\e99e'; } /* '' */
+.oorwin-settings-career-portal:before { content: '\e99f'; } /* '' */
+.oorwin-settings-tasks-reminders:before { content: '\e9a0'; } /* '' */
+.oorwin-settings-communications:before { content: '\e9a1'; } /* '' */
+.oorwin-settings-templates:before { content: '\e9a2'; } /* '' */
+.oorwin-settings-org-hierarchy:before { content: '\e9a3'; } /* '' */
+.oorwin-settings-approvals:before { content: '\e9a4'; } /* '' */
+.oorwin-settings-time-attendance:before { content: '\e9a5'; } /* '' */
+.oorwin-settings-employee-reporting:before { content: '\e9a6'; } /* '' */
+.oorwin-settings-expenses:before { content: '\e9a7'; } /* '' */
+.oorwin-settings-credit-allocation:before { content: '\e9a8'; } /* '' */
+.oorwin-settings-default-settings:before { content: '\e9a9'; } /* '' */
+.oorwin-settings-users:before { content: '\e9aa'; } /* '' */
+.oorwin-settings-teams:before { content: '\e9ab'; } /* '' */
+.oorwin-settings-user-groups:before { content: '\e9ac'; } /* '' */
+.oorwin-settings-security:before { content: '\e9ad'; } /* '' */
+.oorwin-settings-report-access:before { content: '\e9ae'; } /* '' */
+.oorwin-settings-ip-restriction:before { content: '\e9af'; } /* '' */
+.oorwin-default-policy:before { content: '\e9b0'; } /* '' */
+.oorwin-zoom-in:before { content: '\e9b1'; } /* '' */
+.oorwin-new-filter:before { content: '\e9b2'; } /* '' */
+.oorwin-reset-screen-size:before { content: '\e9b3'; } /* '' */
+.oorwin-toggle-orientation:before { content: '\e9b4'; } /* '' */
+.oorwin-salary-insights:before { content: '\e9b5'; } /* '' */
+.oorwin-new-sms:before { content: '\e9b6'; } /* '' */
+.oorwin-new-quick-add:before { content: '\e9b7'; } /* '' */
+.oorwin-new-notifications:before { content: '\e9b8'; } /* '' */
+.oorwin-complained:before { content: '\e9b9'; } /* '' */
+.oorwin-delivered:before { content: '\e9ba'; } /* '' */
+.oorwin-unsubscribed:before { content: '\e9bb'; } /* '' */
+.oorwin-bounced:before { content: '\e9bc'; } /* '' */
+.oorwin-invalid:before { content: '\e9bd'; } /* '' */
+.oorwin-opened:before { content: '\e9be'; } /* '' */
+.oorwin-clicked:before { content: '\e9bf'; } /* '' */
+.oorwin-upload-i9:before { content: '\e9c0'; } /* '' */
+.oorwin-tag-work-authorization:before { content: '\e9c1'; } /* '' */
+.oorwin-personalityinsights-filled:before { content: '\e9c2'; } /* '' */
+.oorwin-tick-mark:before { content: '\e9c3'; } /* '' */
+.oorwin-performance-management:before { content: '\e9c4'; } /* '' */
+.oorwin-view-submission:before { content: '\e9c5'; } /* '' */
+.oorwin-zoom-out:before { content: '\e9c6'; } /* '' */
+.oorwin-awards:before { content: '\e9c7'; } /* '' */
+.oorwin-new-joinee:before { content: '\e9c8'; } /* '' */
+.oorwin-work-anniversary:before { content: '\e9c9'; } /* '' */
+.oorwin-birthday:before { content: '\e9ca'; } /* '' */
+.oorwin-job-description:before { content: '\e9cb'; } /* '' */
+.oorwin-like:before { content: '\e9cc'; } /* '' */
+.oorwin-present-screen:before { content: '\e9cd'; } /* '' */
+.oorwin-performance_weightage_1:before { content: '\e9ce'; } /* '' */
+.oorwin-full-screen:before { content: '\e9cf'; } /* '' */
+.oorwin-mic:before { content: '\e9d2'; } /* '' */
+.oorwin-disconnect:before { content: '\e9d3'; } /* '' */
+.oorwin-pin:before { content: '\e9d4'; } /* '' */
+.oorwin-video-1:before { content: '\e9d5'; } /* '' */
+.oorwin-interview-analytics:before { content: '\e9d6'; } /* '' */
+.oorwin-chat:before { content: '\e9d7'; } /* '' */
+.oorwin-speech:before { content: '\e9d8'; } /* '' */
+.oorwin-minimize:before { content: '\e9d9'; } /* '' */
+.oorwin-recording:before { content: '\e9da'; } /* '' */
+.oorwin-stop-recording:before { content: '\e9db'; } /* '' */
+.oorwin-personalityinsights:before { content: '\e9dc'; } /* '' */
+.oorwin-weightage:before { content: '\e9dd'; } /* '' */
+.oorwin-tag-i9:before { content: '\e9de'; } /* '' */
+.oorwin-job-insights:before { content: '\e9df'; } /* '' */
+.oorwin-assessments:before { content: '\e9e0'; } /* '' */
+.oorwin-requisitions:before { content: '\e9e1'; } /* '' */
+.oorwin-targets:before { content: '\e9e2'; } /* '' */
+.oorwin-bot-setting:before { content: '\e9e3'; } /* '' */
